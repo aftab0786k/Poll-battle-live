@@ -30,8 +30,8 @@ const Dashboard = () => {
     
     try {
       const endpoint = activeTab === 'created' 
-        ? 'http://localhost:5000/api/polls/user/created' 
-        : 'http://localhost:5000/api/polls/user/voted'
+        ? 'https://poll-battle-live-7ja4.vercel.app/api/polls/user/created' 
+        : 'https://poll-battle-live-7ja4.vercel.app/api/polls/user/voted'
       
       const res = await axios.get(endpoint, {
         headers: { Authorization: `Bearer ${user.token}` }

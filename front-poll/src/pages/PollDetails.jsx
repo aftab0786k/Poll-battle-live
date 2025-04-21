@@ -75,7 +75,7 @@ const PollDetails = () => {
     
     try {
       // First update via REST API
-      await axios.post(`http://localhost:5000/api/polls/${id}/vote`, 
+      await axios.post(`https://poll-battle-live-7ja4.vercel.app/api/polls/${id}/vote`, 
         { optionId },
         { headers: { Authorization: `Bearer ${user.token}` } }
       )
