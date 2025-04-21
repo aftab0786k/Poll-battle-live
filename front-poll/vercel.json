@@ -1,1 +1,12 @@
-{"rewrites":[{"source":"/(.*)","destination":"/index.html"}]}
+{
+    "rewrites": [
+        {
+            "source": "/socket.io/:path*",
+            "destination": "https://poll-battle-live-7ja4.vercel.app/socket.io/:path*"
+        },
+        {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        }
+    ]
+}
