@@ -26,6 +26,7 @@ export function AuthProvider({ children }) {
       }
       
       // Get user data with token
+      
       const res = await axios.get('https://poll-battle-live-7ja4.vercel.app/api/users/profile', {
         headers: { Authorization: `Bearer ${token}` }
       })

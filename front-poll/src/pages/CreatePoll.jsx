@@ -22,7 +22,7 @@ const CreatePoll = () => {
     setLoading(true)
     
     try {
-      const res = await axios.post('http://localhost:5000/api/polls', 
+      const res = await axios.post('https://poll-battle-live-7ja4.vercel.app/api/polls', 
         pollData,
         { headers: { Authorization: `Bearer ${user.token}` } }
       )

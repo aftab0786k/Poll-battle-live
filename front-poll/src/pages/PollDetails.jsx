@@ -25,7 +25,7 @@ const PollDetails = () => {
   // Fetch poll data
   const fetchPoll = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/polls/${id}`)
+      const res = await axios.get(`https://poll-battle-live-7ja4.vercel.app/api/polls/${id}`)
       setPoll(res.data)
       setError(null)
     } catch (err) {
