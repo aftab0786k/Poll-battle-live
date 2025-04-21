@@ -24,12 +24,12 @@ export default defineConfig({
   server: {
     proxy: {
       '/socket.io': {
-        target: 'http://localhost:5000',
+        target: 'https://poll-battle-live-7ja4.vercel.app',
         ws: true, // Enable WebSocket proxying
         changeOrigin: true,
       },
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://poll-battle-live-7ja4.vercel.app',
         changeOrigin: true,
       },
     },
